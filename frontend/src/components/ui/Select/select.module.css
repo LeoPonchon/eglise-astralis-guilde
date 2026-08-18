@@ -1,0 +1,44 @@
+.trigger {
+  display: flex;
+  height: 44px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid hsl(var(--input));
+  background-color: hsl(var(--background));
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  color: hsl(var(--foreground));
+}
+
+.content {
+  max-height: 384px;
+  min-width: 8rem;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.viewport { padding: 4px; width: 100%; }
+
+.item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 6px 8px 6px 32px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.separator { height: 1px; background-color: hsl(var(--muted)); margin: 4px 0; }
+
+.label { padding: 6px 8px 6px 32px; font-size: 14px; font-weight: 600; }
+
+

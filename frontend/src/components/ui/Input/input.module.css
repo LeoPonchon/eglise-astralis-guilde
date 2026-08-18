@@ -1,0 +1,14 @@
+.input {
+  height: 44px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid hsl(var(--input));
+  background-color: hsl(var(--background));
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  color: hsl(var(--foreground));
+}
+
+

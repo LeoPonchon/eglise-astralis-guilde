@@ -1,0 +1,66 @@
+.section { padding: 96px 16px; position: relative; }
+.container { max-width: 1200px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 64px; }
+
+.title {
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 16px 0;
+  line-height: 1.2;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.introText { max-width: 768px; margin: 0 auto; display: grid; gap: 16px; font-size: 18px; }
+.introTextPrimary { color: hsl(var(--foreground) / 0.9); line-height: 1.6; }
+.introTextSecondary { color: hsl(var(--muted-foreground)); line-height: 1.6; }
+.primaryAccent { color: hsl(var(--primary)); font-weight: 600; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 64px; }
+.statIconWrap { position: relative; }
+.statIconGlow { position: absolute; inset: 0; background-color: hsl(var(--primary) / 0.2); border-radius: 9999px; filter: blur(24px); opacity: 0.6; }
+.statValue {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 8px;
+}
+.statLabel { font-size: 14px; color: hsl(var(--muted-foreground)); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-bottom: 64px; }
+.cardHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.iconBox { padding: 12px; border-radius: 12px; }
+.iconBoxPrimary { background-color: hsl(var(--primary) / 0.2); box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+.iconBoxAccent { background-color: hsl(var(--accent) / 0.2); box-shadow: 0 0 20px hsl(var(--accent) / 0.3); }
+.cardTitle { font-size: 24px; font-weight: 700; color: hsl(var(--foreground)); }
+.cardContent { display: grid; gap: 16px; }
+.cardTextPrimary { color: hsl(var(--foreground) / 0.9); line-height: 1.6; }
+.cardTextSecondary { color: hsl(var(--muted-foreground)); line-height: 1.6; }
+.valuesList { display: grid; gap: 16px; }
+.valueItem { display: flex; gap: 12px; align-items: flex-start; }
+.valueDot { margin-top: 4px; width: 8px; height: 8px; border-radius: 50%; background-color: hsl(var(--accent)); box-shadow: 0 0 10px hsl(var(--accent)); }
+.valueTitle { color: hsl(var(--foreground)); font-weight: 600; }
+.valueDesc { font-size: 14px; color: hsl(var(--muted-foreground)); }
+
+.ctaCard { padding: 40px; text-align: center; }
+.ctaTitle {
+  background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 12px 0;
+  line-height: 1.2;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.ctaPrimaryText { color: hsl(var(--foreground) / 0.9); line-height: 1.6; max-width: 768px; margin: 0 auto 24px; font-size: 18px; }
+.ctaSecondaryText { color: hsl(var(--muted-foreground)); font-size: 16px; max-width: 640px; margin: 0 auto; }

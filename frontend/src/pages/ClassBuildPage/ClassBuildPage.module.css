@@ -1,0 +1,291 @@
+.page {
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  padding-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.backButton {
+  margin-bottom: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.iconWrapper {
+  padding: 16px;
+  background-color: hsl(var(--primary) / 0.1);
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.role {
+  font-size: 20px;
+  color: hsl(var(--muted-foreground));
+}
+
+.description {
+  font-size: 18px;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 32px;
+  max-width: 768px;
+}
+
+.tabsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.contentGrid {
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  padding: 24px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cardSubtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.cardText {
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 16px;
+}
+
+.cardTextSmall {
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+}
+
+.sectionTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sectionContent {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.sectionSubtitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sectionDetails {
+  display: grid;
+  gap: 8px;
+}
+
+.gridList {
+  display: grid;
+  gap: 12px;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.listNumber {
+  font-weight: 600;
+  margin-right: 8px;
+  color: hsl(var(--primary));
+}
+
+.listBullet {
+  margin-right: 8px;
+  color: hsl(var(--primary));
+}
+
+.listText {
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+}
+
+.badgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badgeText {
+  font-size: 14px;
+}
+
+.divider {
+  border-bottom: 1px solid hsl(var(--border));
+  padding-bottom: 12px;
+}
+
+.tipsCard {
+  padding: 24px;
+  background-color: hsl(var(--primary) / 0.05);
+}
+
+.tipsTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.tipsList {
+  display: grid;
+  gap: 8px;
+}
+
+.tipsItem {
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+  display: flex;
+  align-items: flex-start;
+}
+
+.tipsIcon {
+  margin-right: 8px;
+  color: hsl(var(--primary));
+}
+
+.emptyCard {
+  padding: 48px;
+  text-align: center;
+}
+
+.emptyText {
+  font-size: 18px;
+  color: hsl(var(--muted-foreground));
+}
+
+.section {
+  margin-bottom: 16px;
+}
+
+.mandatorySkills {
+  margin-top: 12px;
+}
+
+.mandatoryTitle {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.flexSkills {
+  margin-top: 12px;
+}
+
+.flexTitle {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.skillItem {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.skillsList {
+  display: grid;
+  gap: 16px;
+}
+
+.statsGrid {
+  display: grid;
+  gap: 8px;
+}
+
+.statsPriority {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.statsDetails {
+  display: grid;
+  gap: 8px;
+}
+
+.statsItem {
+  font-size: 14px;
+}
+
+.gearSection {
+  margin-bottom: 16px;
+}
+
+.gearTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.gearContent {
+  font-size: 14px;
+  display: grid;
+  gap: 4px;
+}
+
+.imaginesSection {
+  margin-bottom: 16px;
+}
+
+.imaginesTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.imagineItem {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.consumablesSection {
+  margin-bottom: 16px;
+}
+
+.consumablesTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.consumablesList {
+  display: grid;
+  gap: 8px;
+}
+
+.consumablesItem {
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+  display: flex;
+  align-items: flex-start;
+}
+
+.consumablesBullet {
+  margin-right: 8px;
+}
+

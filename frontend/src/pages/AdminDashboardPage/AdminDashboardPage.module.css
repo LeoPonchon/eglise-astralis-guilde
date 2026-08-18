@@ -1,0 +1,201 @@
+.page {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+}
+
+.header {
+  border-bottom: 1px solid hsl(var(--border) / 0.5);
+  background-color: hsl(var(--background) / 0.8);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerText {
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+}
+
+.headerSubtext {
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.topSectionActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.toggleLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: hsl(var(--foreground));
+  user-select: none;
+}
+
+.toggleInput {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: hsl(var(--primary));
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: hsl(var(--muted-foreground));
+}
+
+.error {
+  color: hsl(var(--destructive));
+  margin-left: 8px;
+}
+
+.eventsGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.emptyCard {
+  padding: 48px;
+  text-align: center;
+}
+
+.emptyText {
+  color: hsl(var(--muted-foreground));
+}
+
+.eventCard {
+  padding: 24px;
+}
+
+.eventContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.eventIndicator {
+  width: 8px;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.eventDetails {
+  flex: 1;
+}
+
+.eventHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.eventTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-bottom: 8px;
+}
+
+.eventActions {
+  display: flex;
+  gap: 8px;
+}
+
+.eventDescription {
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 12px;
+}
+
+.eventMeta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: hsl(var(--muted-foreground));
+}
+
+.eventMetaItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form {
+  display: grid;
+  gap: 24px;
+}
+
+.formSection {
+  display: grid;
+  gap: 8px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.formActions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.textarea {
+  min-height: 96px;
+  width: 100%;
+  box-sizing: border-box;
+}
+

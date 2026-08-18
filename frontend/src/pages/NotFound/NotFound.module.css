@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--muted) / 0.3);
+}
+
+.container { text-align: center; }
+
+.title { margin-bottom: 16px; font-size: 48px; font-weight: 700; }
+
+.description { margin-bottom: 16px; font-size: 20px; color: hsl(var(--muted-foreground)); }
+
+.link { color: hsl(var(--primary)); text-decoration: underline; }
+

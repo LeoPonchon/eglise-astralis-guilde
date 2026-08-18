@@ -1,0 +1,18 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
+}
+
+.variant-secondary { background-color: hsl(var(--secondary) / 0.15); color: hsl(var(--secondary-foreground)); border-color: hsl(var(--secondary) / 0.4); }
+.variant-outline { background-color: transparent; color: hsl(var(--foreground)); border-color: hsl(var(--border)); }
+
+

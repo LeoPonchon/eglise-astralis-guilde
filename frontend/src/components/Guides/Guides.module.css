@@ -1,0 +1,48 @@
+.section { padding: 96px 16px; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+.title {
+  background: linear-gradient(to right, hsl(var(--secondary)), hsl(var(--accent)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.description { text-align: center; color: hsl(var(--muted-foreground)); margin-bottom: 48px; max-width: 640px; margin: 0 auto 48px; }
+
+.sectionDivider { margin-bottom: 48px; }
+.sectionHeader { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.sectionTitle { font-size: 24px; font-weight: 700; color: hsl(var(--foreground)); }
+
+.guideGrid { display: grid; gap: 24px; }
+
+.card { padding: 24px; }
+.cardHeader { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.iconBox { padding: 12px; background-color: hsl(var(--accent) / 0.1); border-radius: 12px; }
+.cardTitle { font-size: 20px; font-weight: 700; color: hsl(var(--foreground)); }
+.cardDescription { color: hsl(var(--muted-foreground)); margin-bottom: 16px; }
+
+.tipsBox { background-color: hsl(var(--muted) / 0.3); border-radius: 12px; padding: 16px; }
+.tipsTitle { font-weight: 600; color: hsl(var(--foreground)); margin-bottom: 8px; }
+.tipsList { display: grid; gap: 8px; }
+.tipItem { font-size: 14px; color: hsl(var(--muted-foreground)); display: flex; gap: 8px; }
+.tipCheck { color: hsl(var(--accent)); }
+
+.questGrid { display: grid; gap: 24px; }
+.questCardHeader { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+.questIconBox { padding: 12px; background-color: hsl(var(--primary) / 0.1); border-radius: 12px; }
+.questBadges { display: flex; gap: 8px; }
+
+.infoBox { background-color: hsl(var(--muted) / 0.3); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.infoGrid { display: grid; gap: 8px; }
+.infoLabel { font-size: 14px; font-weight: 600; color: hsl(var(--foreground)); }
+.infoText { font-size: 14px; color: hsl(var(--muted-foreground)); }
+.reward { font-size: 14px; color: hsl(var(--primary)); }
+
+.notesBox { background-color: hsl(var(--primary) / 0.1); border-radius: 12px; padding: 12px; }
+.notesText { font-size: 12px; color: hsl(var(--muted-foreground)); font-style: italic; }
+

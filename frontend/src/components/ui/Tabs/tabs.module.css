@@ -1,0 +1,35 @@
+.list {
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: hsl(var(--muted) / 0.3);
+  padding: 4px;
+  gap: 4px;
+  border: 1px solid hsl(var(--border));
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: hsl(var(--foreground));
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.trigger[data-state="active"] {
+  background-color: hsl(var(--primary) / 0.2);
+  color: hsl(var(--primary));
+}
+
+.content { margin-top: 8px; }
+
+

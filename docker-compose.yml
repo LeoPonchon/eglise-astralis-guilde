@@ -1,0 +1,48 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: "http://localhost:4000"
+    container_name: guild-frontend
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: guild-backend
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+      - FRONTEND_ORIGINS=http://localhost:8080
+      - SUPABASE_URL=https://okzacgsukjhyauepjqjk.supabase.co
+      - SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9remFjZ3N1a2poeWF1ZXBqcWprIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MTYzMTEzOCwiZXhwIjoyMDc3MjA3MTM4fQ.-DM2ms0KmP19pMfxC--DfjKtBQlQ9Ey3vgLdpOaDP5M
+      - ADMIN_USERNAME=shimakuro
+      - ADMIN_PASSWORD=Ffezsg432@REZ321&
+      - COOKIE_SECURE=false
+      # Discord webhooks mapping (local)
+      - DISCORD_WEBHOOK_RAID_URL=https://discord.com/api/webhooks/1433407846778671264/z6_KnLJoiH8yMBEsndDZ0uaUfxFbDlaODiFwc7sZkwxwRtCyR9uEHRsvetIFO31ehCiX
+      - DISCORD_WEBHOOK_EVENT_URL=https://discord.com/api/webhooks/1433408309418922074/Mzbc4MX5nUcc1yBn3-atGg-mdWgYQNM8Itn-rJcws9w7nlfTQJTNhaEB4qQIvrhAGjKz
+      - DISCORD_WEBHOOK_WORLD_BOSS_URL=https://discord.com/api/webhooks/1433408204007800985/M7bxnWQti0dtik2kbDC3YHN5mmdDxdLsj2iTVI8vFiTawllHTAzT_g1EqbXNWrbCnsgw
+      - DISCORD_WEBHOOK_RECURRING_EVENT_URL=https://discord.com/api/webhooks/1434683714012577966/qlgffOPqcqNM9LTiObszPEA9OrHdHALXES3UYL09GnspDIy8ojWINe8fNstludXvpA8r
+      # Role mentions
+      - DISCORD_ROLE_RAID_ID=1433391859891175456
+      - DISCORD_ROLE_EVENT_ID=1433391509566259260
+      - DISCORD_ROLE_WORLD_BOSS_ID=1433391542617243669
+      - DISCORD_ROLE_RECURRING_ID=1434674823396593798
+      # Optional fallback if a type-specific webhook is missing
+      # - DISCORD_WEBHOOK_URL=
+
+networks:
+  default:
+    name: guild-net
+

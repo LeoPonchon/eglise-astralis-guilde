@@ -1,0 +1,22 @@
+node_modules
+npm-debug.log*
+yarn-error.log*
+.pnpm-store
+.DS_Store
+.vscode
+.idea
+.git
+.gitignore
+build
+coverage
+dist
+**/*.map
+
+# Local env files
+.env*
+
+# Editor/OS
+*.swp
+Thumbs.db
+
+

@@ -1,0 +1,18 @@
+.footer { padding: 48px 16px; border-top: 1px solid hsl(var(--border)); }
+
+.container { max-width: 1200px; margin: 0 auto; }
+
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-bottom: 32px; }
+
+.column {}
+.brandTitle { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+.brandName { font-weight: 700; color: hsl(var(--foreground)); }
+.brandDescription { font-size: 14px; color: hsl(var(--muted-foreground)); }
+
+.sectionTitle { font-weight: 600; color: hsl(var(--foreground)); margin-bottom: 16px; }
+.links { display: grid; gap: 8px; }
+.link { font-size: 14px; color: hsl(var(--muted-foreground)); text-decoration: none; }
+
+.communityDesc { font-size: 14px; color: hsl(var(--muted-foreground)); margin-bottom: 16px; }
+
+.copyright { padding-top: 32px; border-top: 1px solid hsl(var(--border)); text-align: center; font-size: 14px; color: hsl(var(--muted-foreground)); }
